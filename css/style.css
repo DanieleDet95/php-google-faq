@@ -1,0 +1,72 @@
+/* Impostazioni generali */
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+
+/* Impostazioni header */
+header .container{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  padding: 20px 20px 0px 20px;
+  border-bottom: 1px solid rgba(151,151,151,0.5);
+}
+.logo {
+  width: 80px;
+  vertical-align: bottom;
+}
+span {
+  font-size: 22px;
+  color: #5f6368;
+  font-family: "product sans","open sans",arial,sans-serif;
+}
+.menu{
+  display: flex;
+  margin: 0;
+  padding: 20px 15px 0 0;
+}
+.menu li{
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.menu li.right{
+  flex-grow: 1;
+  text-align: right;
+}
+
+.menu li.active{
+  border-bottom: 3px solid blue;
+}
+
+.menu li a{
+  display: inline-block;
+  font-family: "product sans","open sans",arial,sans-serif;
+  color: #5f6368;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+/* Impostazioni main */
+main .container{
+  max-width: 978px;
+  margin: 0 auto;
+  margin-top: 130px;
+}
+
+.domanda{
+  font-size: 24px;
+  color: #3c4043;
+}
+.risposta{
+  font-size: 14px;
+  letter-spacing: .2px;
+  line-height: 24px;
+  padding-top: 20px;
+}
