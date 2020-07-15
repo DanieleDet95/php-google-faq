@@ -1,35 +1,29 @@
 <!-- Apertura php -->
 <?php
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL | E_STRICT);
-
-
-
+  // Array di domande e risposte frequenti
   $domande = [
     [
       "domanda" => "Come state implementando la recente decisione della Corte
                     di giustizia dell'Unione europea (CGUE) relativa al diritto
                     all'oblio?",
-      "risposta" => ["La recente decisione della Corte di giustizia dell'Unione
-                    europea ha profonde conseguenze per i motori di ricerca in
+      "risposta" => [
+                    ["La recente decisione della Corte di giustizia dell Unione
+                    europea. ha profonde conseguenze per i motori di ricerca in
                     Europa. La Corte ha stabilito che alcuni utenti hanno il
                     diritto di chiedere ai motori di ricerca come Google di
                     rimuovere risultati relativi a chiavi di ricerca che
                     includono il proprio nome. Per poter essere rimossi, i
                     risultati visualizzati devono essere inadeguati, irrilevanti
                     o non più rilevanti, o eccessivi."],
-                    [
-                    "Da quando questa decisione è stata pubblicata il 13 maggio
+                    ["Da quando questa decisione è stata pubblicata il 13 maggio
                     2014, abbiamo lavorato incessantemente per uniformarci a
                     essa. Si tratta di una procedura complessa perché dobbiamo
                     valutare ogni singola richiesta e effettuare un bilanciamento
                     tra il diritto dell'individuo a controllare i suoi dati
                     personali ed il diritto di tutti di conoscere e distribuire
                     le informazioni."],
-                    [
-                    "Per presentare una richiesta di rimozione, compila questo
+                    ["Per presentare una richiesta di rimozione, compila questo
                     modulo web. Riceverai una risposta automatica che conferma
                     la ricezione della tua richiesta. Dopodiché valuteremo il
                     tuo caso (tieni presente che potrebbe occorrere un po' di
@@ -46,31 +40,30 @@ error_reporting(E_ALL | E_STRICT);
                     prendere decisioni in merito al tuo caso. Se non sei d'accordo
                     con la nostra valutazione, puoi rivolgerti all'Autorità
                     garante per la protezione dei dati personali nel tuo paese."],
-                    [
-                    "Nei prossimi mesi lavoreremo a stretto contatto con le autorità
+                    ["Nei prossimi mesi lavoreremo a stretto contatto con le autorità
                     per la protezione dei dati e con altre autorità per perfezionare
                     il nostro approccio. La decisione della CGUE rappresenta un
                     cambiamento significativo per i motori di ricerca. Siamo
                     preoccupati per le sue conseguenze, ma riteniamo anche che
                     sia importante rispettare la decisione della Corte e ci
                     stiamo adoperando per predisporre una procedura conforme alla legge."],
-                    [
-                    "Quando cerchi un nome, potresti trovare una notifica in cui
+                    ["Quando cerchi un nome, potresti trovare una notifica in cui
                     viene spiegato che i risultati potrebbero essere stati
                     modificati nel rispetto delle leggi europee per la protezione
                     dei dati. Mostriamo questa notifica agli utenti europei
                     quando cercano la maggior parte dei nomi, non soltanto le
                     pagine che sono state soggette a una rimozione."]
+                  ]
     ],
     [
       "domanda" => "Come fa Google a proteggere la mia privacy e a tenere le mie
                     informazioni al sicuro?",
-      "risposta" => ["Sappiamo che la sicurezza e la privacy sono importanti per
+      "risposta" => [
+                    ["Sappiamo che la sicurezza e la privacy sono importanti per
                     te e lo sono anche per noi. Per noi è imperativo offrire un'
                     elevata sicurezza e assicurarti che le tue informazioni sono
                     al sicuro e accessibili quando ne hai bisogno."],
-                    [
-                    "Siamo costantemente al lavoro per garantire un'elevata sicurezza,
+                    ["Siamo costantemente al lavoro per garantire un'elevata sicurezza,
                     proteggere la tua privacy e rendere Google ancora più efficace
                     ed efficiente per te. Spendiamo centinaia di milioni di dollari
                     ogni anno per la sicurezza e ci avvaliamo di esperti di fama
@@ -80,19 +73,19 @@ error_reporting(E_ALL | E_STRICT);
                     Dashboard, la verifica in due passaggi e Impostazioni annunci.
                     Così, per quanto riguarda le informazioni che condividi con
                     Google, hai il massimo controllo."],
-                    [
-                    "Puoi leggere ulteriori informazioni sulla sicurezza online,
+                    ["Puoi leggere ulteriori informazioni sulla sicurezza online,
                     incluso come proteggere te e la tua famiglia online, nel
                     Centro Google per la sicurezza online."],
-                    [
-                    "Scopri quali misure adottiamo per garantire protezione e
+                    ["Scopri quali misure adottiamo per garantire protezione e
                     sicurezza alle tue informazioni personali, lasciando a te
                     il controllo."]
+                  ]
     ],
     [
       "domanda" => "Come faccio a rimuovere informazioni su di me dai risultati
                     di ricerca di Google?",
-      "risposta" => ["I risultati di ricerca di Google rispecchiano i contenuti
+      "risposta" => [
+                    ["I risultati di ricerca di Google rispecchiano i contenuti
                     pubblicamente disponibili sul Web. I motori di ricerca non
                     possono rimuovere i contenuti direttamente dai siti web,
                     quindi rimuovere risultati di ricerca da Google non consente
@@ -108,11 +101,13 @@ error_reporting(E_ALL | E_STRICT);
                     nei risultati di ricerca di Google. In caso di una richiesta
                     di rimozione urgente, è inoltre possibile visitare la nostra
                     pagina di assistenza per avere ulteriori informazioni."]
+                  ]
     ],
     [
       "domanda" => "Quando faccio clic sui risultati della Ricerca Google, le
                     mie chiavi di ricerca vengono inviate ai siti web?",
-      "risposta" => ["In alcuni casi sì. Quando fai clic su un risultato della
+      "risposta" => [
+                    ["In alcuni casi sì. Quando fai clic su un risultato della
                     Ricerca Google, il tuo browser web potrebbe reindirizzare
                     alla pagina web di destinazione anche l'indirizzo Internet,
                     o URL, della pagina dei risultati di ricerca sotto forma di
@@ -129,17 +124,9 @@ error_reporting(E_ALL | E_STRICT);
                     (Application Programming Interface). Inoltre, gli inserzionisti
                     potrebbero ricevere informazioni relative all' esatte parole
                     chiave che hanno determinato il clic su un annuncio."]
+                  ]
     ]
   ];
-
-  foreach ($domande as $domanda => $DeR) {
-
-      echo $DeR['domanda'].'<br />';
-
-      foreach ($DeR['risposta'] as $blocchi => $part) {
-        echo $part.'<br />';
-      }
-  }
 
 ?>
 <!-- Chiusura php -->
@@ -155,10 +142,14 @@ error_reporting(E_ALL | E_STRICT);
   <body>
 
     <!-- Apertura header -->
-    <!-- <header>
+    <header>
       <div class="container">
+
+        <!-- Titolo e logo -->
         <img class="logo "src="img/logo.png" alt="logo">
         <a href="#"><span>Privacy e termini</span></a>
+
+        <!-- Menu header -->
         <ul class="menu">
           <li ><a href="#">Introduzione</a></li>
           <li><a href="#">Norme sulla privacy</a></li>
@@ -170,13 +161,27 @@ error_reporting(E_ALL | E_STRICT);
       </div>
 
 
-    </header> -->
+    </header>
     <!-- Chiusura header -->
 
     <!-- Apertura main -->
     <main>
       <div class="container">
 
+        <!-- Ciclare nell'array tutte le domande e risposte -->
+        <?php foreach ($domande as $domanda => $DeR) { ?>
+
+          <!-- Stampa domande -->
+          <h2 class="domanda"><?php echo '<br />'.$DeR['domanda'].'<br /><br />';?></h2>
+
+          <!-- Ciclare tutte le parti delle risposte -->
+          <?php foreach ($DeR['risposta'] as $blocchi => $part) {?>
+
+            <!-- stampa delle risposte -->
+            <p class="risposta"> <?php echo $part[0].'<br />';?> </p>
+
+          <?php } ?>
+        <?php } ?>
 
       </div>
     </main>
@@ -184,7 +189,26 @@ error_reporting(E_ALL | E_STRICT);
 
     <!-- Apertura footer -->
     <footer>
+      <div class="container-footer">
 
+        <!-- Info footer -->
+        <div class="info">
+          <ul>
+            <li><a href="#">Google</a></li>
+            <li><a href="#">Tutto su Google</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Termini</a></li>
+          </ul>
+        </div>
+
+        <!-- Select lingue disponibili -->
+        <div class="lingua">
+          <select class="" name="">
+            <option value="">Italiano</option>
+            <option value="">Inglese</option>
+          </select>
+        </div>
+      </div>
     </footer>
     <!-- Chiusura footer -->
 
